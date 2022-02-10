@@ -101,7 +101,7 @@ async def callback_query(client: Client, query: CallbackQuery):
             ],
             [
                 InlineKeyboardButton('📣 ПРИКЛАДНІ МЄМИ', url='https://t.me/prikladnyk'),
-                InlineKeyboardButton('👨‍💻 ЧЄЛ ЯКИЙ СПИЗДИВ БОТА З ГІТХАБУ', url='https://t.me/kyryl0')
+                InlineKeyboardButton('👨‍💻 ЧЄЛ ЯКИЙ СПИЗДИВ БОТА З ГІТХАБУ', url='https://t.me/kyrylo0')
             ],
             [
                 InlineKeyboardButton('➕Мєми філфаку бо багато мємів не буває ай гес➕', callback_data="TUTORIAL_CALLBACK")

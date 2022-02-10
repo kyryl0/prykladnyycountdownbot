@@ -22,8 +22,6 @@
 ## Commands
 ### Works in any group ( /set  &  /stopc )
 
-[🎥 Tutorial Video: ](https://www.youtube.com/watch?v=nYSrgdIYdTw)
-
 ```
 > Send the command below in correct format to the group.
 
@@ -37,29 +35,10 @@ Example:
 
   /stopc
 ```
-<p align="center">
-<img src="https://telegra.ph/file/432ce18d60b1f07294d50.jpg">
-<p>
- 
+
 ## Deployment Methods
 
 ### Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kyryl0/prykladnyycountdownbot)
     
-## Credits
-- [TeLe TiPs](https://github.com/teletips)
-- [Thakshaka](https://t.me/thakshakar)
-- [Pyrogram](https://github.com/pyrogram/pyrogram)
-
-## ⚠️ First & Last Warning
-
-- Changing the code is NOT ALLOWED!!    
-- You are free to use this code in any of your projects, but you MUST include the following in your README.md (Copy & paste)
-- [📞 Contact](https://t.me/tele_gram_tips_bot)
-```
-##Credits
-- [Countdown Timer Telegram bot by TeLe TiPs] (https://github.com/teletips/CountdownTimer-TeLeTiPs)
-```
-## Read GNU AFFERO GENERAL PUBLIC LICENSE: 
-[LICENSE](https://github.com/teletips/CountdownTimer-TeLeTiPs/blob/main/LICENSE)

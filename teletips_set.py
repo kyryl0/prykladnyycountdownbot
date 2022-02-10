@@ -24,7 +24,7 @@ TELETIPS_MAIN_MENU_BUTTONS = [
                 InlineKeyboardButton('👥 Мєми...', callback_data="GROUP_CALLBACK"),
             ],
             [
-                InlineKeyboardButton('➕Мєми філфаку бо багато мємів не буває ай гес➕', callback_data="TUTORIAL_CALLBACK")
+                InlineKeyboardButton('➕Хочу бота собі в чат➕', callback_data="TUTORIAL_CALLBACK")
             ]
         ]
 
@@ -79,7 +79,7 @@ async def callback_query(client: Client, query: CallbackQuery):
     elif query.data=="TUTORIAL_CALLBACK":
         TELETIPS_TUTORIAL_BUTTONS = [
             [
-                InlineKeyboardButton("🌎 На свої мєми ", url="https://t.me/philfuckmemes")
+                InlineKeyboardButton("🌎 Клони тут: ", url="https://t.me/+r-EclAZpVZo5NTUy")
             ],
             [
                 InlineKeyboardButton("⬅️ Назад", callback_data="START_CALLBACK"),
@@ -104,7 +104,7 @@ async def callback_query(client: Client, query: CallbackQuery):
                 InlineKeyboardButton('👨‍💻 ЧЄЛ ЯКИЙ СПИЗДИВ БОТА З ГІТХАБУ', url='https://t.me/kyrylo0')
             ],
             [
-                InlineKeyboardButton('➕Мєми філфаку бо багато мємів не буває ай гес➕', callback_data="TUTORIAL_CALLBACK")
+                InlineKeyboardButton('➕Хочу бота собі в чат➕', callback_data="TUTORIAL_CALLBACK")
             ]
         ]
         reply_markup = InlineKeyboardMarkup(TELETIPS_START_BUTTONS)

@@ -123,9 +123,9 @@ async def set_timer(client, message):
         if message.chat.id>0:
             return await message.reply('⛔️ Спробуй цю команду в **груп чаті**.')
         elif not (await client.get_chat_member(message.chat.id,message.from_user.id)).can_manage_chat:
-            return await message.reply('👮🏻‍♂️ Вибач(( **тільки адміни** можуть виповнити цю команду, а я не адмін(((')    
+            return await message.reply('👮🏻‍♂️ Вибач(( **тільки адмін_к_и** можуть виповнити цю команду(((')    
         elif len(message.command)<3:
-            return await message.reply('❌ **Фіговий формат**\n\n✅ Формат повинен бути тіпа \n<code> /set seconds "важний івент"</code>\n\n**Приклад**:\n <code>/set 86400 "ДЕДЛАЙН РОБІТ ДАРЧУК 😳"</code>')    
+            return await message.reply('❌ **Неправильний формат**\n\n✅ Формат повинен бути тіпа \n<code> /set seconds "важний івент"</code>\n\n**Приклад**:\n <code>/set 86400 "ДЕДЛАЙН РОБІТ ДАРЧУК 😳"</code>')    
         else:
             user_input_time = int(message.command[1])
             user_input_event = str(message.command[2])
@@ -140,7 +140,7 @@ async def set_timer(client, message):
                     await asyncio.sleep(1)
                     user_input_time -=1
                 await finish_countdown.edit("🚨 Біп! Бііп блять!! **Час закінчимвся!!!**")
-            elif 10<user_input_time<60:
+            elif 10<user_input_time<259200:
                 while user_input_time>0 and not stoptimer:
                     s=user_input_time%60
                     Countdown_TeLe_TiPs='{}\n\n⏳ {:02d}**s**\n\n<i>"Живіть так, шоб потім редагувати корпус Дарчук..."</i>\n      - Steve Jobs'.format(user_input_event, s)
@@ -148,7 +148,7 @@ async def set_timer(client, message):
                     await asyncio.sleep(3)
                     user_input_time -=3
                 await finish_countdown.edit("🚨 Біп! Бііп блять!! **Час закінчимвся!!!**")
-            elif 60<=user_input_time<3600:
+            elif 259200<=user_input_time<691200:
                 while user_input_time>0 and not stoptimer:
                     m=user_input_time%3600//60
                     s=user_input_time%60
@@ -157,7 +157,7 @@ async def set_timer(client, message):
                     await asyncio.sleep(3)
                     user_input_time -=3
                 await finish_countdown.edit("🚨 Біп! Бііп блять!! **Час закінчимвся!!!**")
-            elif 3600<=user_input_time<86400:
+            elif 691200<=user_input_time<2592000:
                 while user_input_time>0 and not stoptimer:
                     h=user_input_time%(3600*24)//3600
                     m=user_input_time%3600//60
@@ -167,7 +167,7 @@ async def set_timer(client, message):
                     await asyncio.sleep(7)
                     user_input_time -=7
                 await finish_countdown.edit("🚨 Біп! Бііп блять!! **Час закінчимвся!!!**")
-            elif user_input_time>=86400:
+            elif user_input_time>=2592000:
                 while user_input_time>0 and not stoptimer:
                     d=user_input_time//(3600*24)
                     h=user_input_time%(3600*24)//3600
